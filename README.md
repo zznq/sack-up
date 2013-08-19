@@ -1,28 +1,9 @@
-== README
+Sack up
+-------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Have a great idea for a project and want some help implementing it? Have an open-source project and would like an easier way to find contributers?
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Sack up is a project intended to help developers find each other. Our goal is that this will be the defacto place for developers to converge with great ideas.
+
+Stay tuned as we ramp this project, more details to follow.
