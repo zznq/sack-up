@@ -1,0 +1,12 @@
+<h1>Projects#index</h1>
+
+<% if @projects.present? %>
+  <ul class="projects">
+  <% @projects.each do |p| %>
+    <li>
+      <span class="name"><%= p.Name %></span>
+      <p><%= p.description %></p>
+    </li>
+  <% end %>
+  </ul>
+<% end %>
