@@ -40,7 +40,8 @@ GEM
     better_errors (0.3.2)
       coderay (>= 1.0.0)
       erubis (>= 2.7.0)
-    binding_of_caller (0.6.8)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -61,6 +62,7 @@ GEM
     coffee-script-source (1.6.3)
     columnize (0.3.6)
     database_cleaner (1.1.1)
+    debug_inspector (0.0.2)
     debugger (1.6.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -192,7 +194,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors (= 0.3.2)
-  binding_of_caller (= 0.6.8)
+  binding_of_caller (~> 0.7.1)
   bootstrap-sass!
   capybara
   capybara-webkit

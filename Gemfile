@@ -26,7 +26,7 @@ end
 group :development do
   # better error pages in dev
   gem 'better_errors', '0.3.2'
-  gem 'binding_of_caller', '0.6.8'
+  gem 'binding_of_caller', '~> 0.7.1'
 
   # suppress log entries for assets in dev
   gem 'quiet_assets'
