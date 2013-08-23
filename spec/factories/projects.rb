@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :project do
     name Faker::Lorem.word
-    descrption Faker::Lorem.sentences.join('')
+    description Faker::Lorem.sentences.join('')
   end
 end
