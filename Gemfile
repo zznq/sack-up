@@ -40,6 +40,9 @@ group :development, :test do
   gem 'capybara-webkit'
   gem 'launchy'
 
+  gem 'guard'
+  gem 'guard-rspec'
+
   gem 'factory_girl_rails'
   gem 'faker'
 

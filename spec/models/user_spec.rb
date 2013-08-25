@@ -34,4 +34,8 @@ describe User do
       subject.password.should == new_password
     end
   end
+
+  describe 'associations' do
+    it { should have_one :profile }
+  end
 end
