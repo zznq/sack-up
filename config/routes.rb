@@ -4,6 +4,8 @@ SackUp::Application.routes.draw do
   resources :projects
   devise_for :users
 
+  resource :user_profile
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

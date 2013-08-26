@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :user do
     sequence(:email) { |n| Faker::Internet.email("email#{n}") }
-    password { Faker::Internet.password }
+    password { Faker::Lorem.characters(8) }
   end
 end

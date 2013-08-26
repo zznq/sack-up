@@ -36,6 +36,6 @@ describe User do
   end
 
   describe 'associations' do
-    it { should have_one :profile }
+    it { should have_one(:user_profile).dependent(:destroy) }
   end
 end
