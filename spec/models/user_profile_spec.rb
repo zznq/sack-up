@@ -18,7 +18,7 @@ describe UserProfile do
     it { should respond_to :url }
   end
 
-  describe '.name' do
+  describe '#name' do
     subject { FactoryGirl.create :user_profile, :name => name }
     let(:name) { Faker::Name.name }
     it 'should return the user profile name' do
@@ -26,14 +26,14 @@ describe UserProfile do
     end
   end
 
-  describe '.name=' do
+  describe '#name=' do
     it 'should set the user profile name' do
       subject.name = 'foo'
       subject.name.should == 'foo'
     end
   end
 
-  describe '.bio' do
+  describe '#bio' do
     let(:bio) { Faker::Lorem::paragraph }
     subject { FactoryGirl.create :user_profile, :bio => bio}
     it 'should return the user profile bio' do
@@ -41,14 +41,14 @@ describe UserProfile do
     end
   end
 
-  describe '.bio=' do
+  describe '#bio=' do
     it 'should set the user profile bio' do
       subject.bio = 'bio test'
       subject.bio.should == 'bio test'
     end
   end
 
-  describe '.location' do
+  describe '#location' do
     subject { FactoryGirl.create :user_profile, :location => location }
     let(:location) { "#{Faker::Address.street_address} #{Faker::Address.city}, #{Faker::Address.state}" }
     it 'should return the user profile location' do
@@ -56,7 +56,7 @@ describe UserProfile do
     end
   end
 
-  describe '.location=' do
+  describe '#location=' do
     let(:new_location) { "#{Faker::Address.city}, #{Faker::Address.state}" }
     it 'should set the user profile location' do
       subject.location = new_location;

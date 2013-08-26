@@ -1,31 +1,32 @@
 require 'spec_helper'
 
 describe 'As a user' do
+  let!(:user) { FactoryGirl.create :user }
+
   before do
-    @user = FactoryGirl.create :user
-    FactoryGirl.create :user_profile, :user => @user
-    login(@user, :user)
+    FactoryGirl.create :user_profile, :user => user
+    login(user, :user)
   end
 
-  describe 'when viewing my profile' do
+  context 'when viewing my profile' do
     before do
       visit user_profile_path
     end
 
-    it 'should display my name' do
-      expect(page).to have_content @user.user_profile.name
+    it 'displays my name' do
+      expect(page).to have_content user.user_profile.name
     end
 
-    it 'should display my bio' do
-      expect(page).to have_content @user.user_profile.bio
+    it 'displays my bio' do
+      expect(page).to have_content user.user_profile.bio
     end
 
-    it 'should display my location' do
-      expect(page).to have_content @user.user_profile.location
+    it 'displays my location' do
+      expect(page).to have_content user.user_profile.location
     end
 
-    it 'should display my url' do
-      expect(page).to have_content @user.user_profile.url
+    it 'displays my url' do
+      expect(page).to have_content user.user_profile.url
     end
   end
 end
