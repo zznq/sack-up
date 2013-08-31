@@ -6,15 +6,15 @@ gem 'pg'
 gem 'jquery-rails'
 
 # gem 'therubyracer', platforms: :ruby
-gem 'turbolinks'
+# gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
 gem 'simple_form'
+gem 'acts-as-taggable-on'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
-  gem 'bootstrap-sass', :git => 'git://github.com/thomas-mcdonald/bootstrap-sass.git', :branch => '3'
 
   gem 'uglifier', '>= 1.3.0'
 end

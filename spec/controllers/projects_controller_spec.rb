@@ -25,6 +25,7 @@ describe ProjectsController do
     before :each do
       get :new
     end
+    
     it 'should display render the correct template' do
       response.should render_template :new
     end
